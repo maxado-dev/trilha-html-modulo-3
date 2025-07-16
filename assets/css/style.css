@@ -17,11 +17,34 @@ a { color:blue; text-decoration: none;}
     grid-gap: 3rem;
     display: grid;
     gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    grid-template-areas: "aside main nav";
+    grid-template-columns: 0.5fr 5fr 0.5fr;
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+#introduction {
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "intro-text intro-tab";
+    grid-template-columns: 3fr 1.5fr;
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+#introduction #intro-tab {
+    table-layout: fixed;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    border-collapse: collapse;
+}
+
+#intro-tab #title-tab,#image-tab,#website {
+    text-align: center;
+}
+
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
@@ -35,4 +58,33 @@ a { color:blue; text-decoration: none;}
 }
 figure {
     text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+}
+
+#intro-text small {
+    margin-top: 0;
+    padding-left: 1rem;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.content intro-text {
+    grid-area: intro-text;
+}
+.content intro-tab {
+    grid-area: intro-tab;
 }
