@@ -1,26 +1,67 @@
-body, html {
+    body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: silver;
 }
+
 ul { list-style: none; padding-left: 5px; }
+
 a { color:blue; text-decoration: none;}
+
 .bar {
     background-color: #f9f9fb;
     padding:15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
+    border-top: solid 1px #515ea4;
+    border-bottom: solid 1px #515ea4;
 }
-.content {
+main {
     max-width: 1440px;
+    background-color: whitesmoke;
     margin: auto;
     grid-gap: 3rem;
     display: grid;
     gap: 3rem;
-    grid-template-areas: "aside main nav";
-    grid-template-columns: 0.5fr 5fr 0.5fr;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    grid-template-areas: "side-content full-content in-article";
+    grid-template-columns: 2fr 5fr 1.5fr;
+}
+
+main p, li {
+    padding: 0.5rem;
+}
+
+main p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+aside li, nav li {
+    padding-left: 2rem;
+}
+
+main p:hover, li:hover, tr:hover {
+    background-color: rgb(188, 200, 244);
+    border-radius: 0.5rem;
+}
+
+body a {
+    color: rgb(27, 27, 219);
+}
+
+body a:hover {
+    color: rgb(27, 27, 219);
+    text-decoration: underline;
+}
+
+#logo {
+    background-color: silver;
+    margin: 0;
+}
+
+#cat-logo img {
+    border-radius: 1rem;
+    border-color: rgb(189, 198, 210);
+    border: 1px solid;
 }
 
 #introduction {
@@ -33,12 +74,22 @@ a { color:blue; text-decoration: none;}
     padding-left: 0.5rem;
 }
 
-#introduction #intro-tab {
+#intro-tab {
+    margin-top: 0.5rem;
     table-layout: fixed;
+    background-color: rgb(218, 218, 218);
+    border-radius: 1rem;
+    border-style: double;
+    border-color: gray;
+    padding: 0.2rem;
     width: 100%;
     white-space: normal;
     word-wrap: break-word;
     border-collapse: collapse;
+}
+
+#intro-tab img {
+    border-radius: 0.5rem;
 }
 
 #intro-tab #title-tab,#image-tab,#website {
@@ -56,35 +107,62 @@ a { color:blue; text-decoration: none;}
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
-figure {
-    text-align: center;
-}
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 0.1rem;
-}
 
 #intro-text small {
     margin-top: 0;
     padding-left: 1rem;
-}
-
-nav {
-    grid-area: nav;
-}
-
-main {
-    grid-area: main;
-}
-
-aside {
-    grid-area: aside;
-}
-
-.content intro-text {
     grid-area: intro-text;
 }
-.content intro-tab {
+
+#intro-tab {
     grid-area: intro-tab;
+}
+
+#full-content {
+    grid-area: full-content;
+}
+
+#side-content {
+    grid-area: side-content;
+    margin-left: 1rem;
+}
+
+#in-article { 
+    grid-area: in-article;
+    padding-left: 2rem;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+#intro-text small {
+    margin-top: 0;
+    padding-left: 2rem;
+}
+
+h1 {
+    padding-left: 1rem;
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+    color: rgb(19, 19, 133);
+}
+
+h2 {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem;
+    color: rgb(19, 19, 133);
+}
+
+h3 {
+    padding-left: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.1rem;
+    color: rgb(19, 19, 133);
+}
+
+h4, h5, h6 {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.1rem;
+    color: rgb(19, 19, 133);
 }

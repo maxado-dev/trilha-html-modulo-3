@@ -9,30 +9,37 @@
 </head>
 <body>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
-
-    <div class="bar"></div>
-
-    <div class="content">
-        <aside>
+    <header id="logo">
+        <figure id="cat-logo">
+            <img src="assets/images/schroldinger-small.jpg" width="200"/>
+        </figure>
+        <div class="bar"></div>
+    </header>
+    <main>
+        <aside id="side-content">
             <h2>Jogos</h2>
             <ul>
-                <li><a href="#">Links</a></li>
+                <li><a href="#">League of Legends</a></li>
+                <li><a href="#">Dark Souls III</a></li>
+                <li><a href="#">The Elder Scrolls V: Skyrim</a></li>
+                <li><a href="#">Mortal Kombat X</a></li>
+                <li><a href="#">New World (jogo eletrônico)</a></li>
             </ul>
         </aside>
-
-        <main>
+        <nav id="in-article">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#">Âncoras</a></li>
+            </ul>
+        </nav>
+        <article id="full-content">
             <section id="introduction">
                 <div id="intro-text">
                     <h1>
                         Tibia (Jogo)
                     </h1>
                     <small>
-                        <b>Nota:</b> Se procura pelo osso, veja <a href="https://pt.wikipedia.org/wiki/T%C3%ADbia">Tíbia</a>.
+                        <b>Nota: </b>Se procura pelo osso, veja <a href="https://pt.wikipedia.org/wiki/T%C3%ADbia">Tíbia</a>.
                     </small>
                     <p>
                         Tibia é um jogo eletrônico de RPG multijogador (MMORPG) gratuito, desenvolvido pela CipSoft. Criado em 1997, 
@@ -54,84 +61,354 @@
                         O jogo foi desenvolvido utilizando a linguagem de programação C++ em ambas versões de Windows e GNU/Linux.
                     </p>
                 </div>
-
                 <div id="intro-tab">
+                    <aside>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">
+                                        <div id="title-tab">Tibia</div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" id="image-tab">
+                                        <a href="https://www.tibia.com/mmorpg/free-multiplayer-online-role-playing-game.php" target="_blank">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tibia-logo-2006-1000x450_schwarz.jpg/250px-Tibia-logo-2006-1000x450_schwarz.jpg" 
+                                            alt="Logo do Tibia, com um fundo escuro e sua clássica fonte amarela-alaranjada" width="250" height="113">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Desenvolvedora
+                                    </th>
+                                    <td>
+                                        <a href="https://www.cipsoft.com/en/">CipSoft</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Diretores
+                                    </th>
+                                    <td>
+                                        Guido Lübke, Stephan Payer, Ulrich Schlott e Stephan Vogler.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Plataformas
+                                    </th>
+                                    <td>
+                                        macOS, Windows e GNU/Linux
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Lançamento
+                                    </th>
+                                    <td>
+                                        7 de Janeiro de 1997
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Gênero
+                                    </th>
+                                    <td>
+                                        Multijogador
+                                    </td>
+                                </tr>
+                                <tr id="website" >
+                                    <td colspan="2">
+                                        <a href="https://www.tibia.com/news/?subtopic=latestnews" target="_blank">www.tibia.com</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </aside>
+                </div>
+            </section>
+            <section class="history">
+                <h2>
+                    História
+                </h2>
+                <p>
+                    A história começou no outono europeu de 1995 quando três estudantes (os alemães Stephan Börzsönyi, Ulrich Schlott e 
+                    Stephan Vogler), que enxergavam o grande potencial que a internet poderia vir a ter, tiveram a ideia de criar um 
+                    RPG online. Contudo, eles desejavam que o jogo deles possuísse uma interface gráfica, diferentemente dos vários 
+                    Multi-user dungeons baseados em texto da época. Guido Lübke começou como um jogador normal, e em 1999 se juntaria aos 
+                    três como o quarto oficial executivo do jogo.
+                </p>
+                <h3>
+                    O jogo
+                </h3>
+                <p>
+                    A partir de 1996 começaram a surgir os primeiros planos concretos para o jogo. Foi escrita a programação básica 
+                    para a rotina de manuseio de objetos, foi utilizado o editor MudEdit para o desenho dos níveis, itens, e personagens; 
+                    e foi testado o protocolo TCP/IP para a comunicação entre o servidor e o jogo. Em agosto do mesmo ano se havia um 
+                    servidor rodando em Linux e um cliente do jogo rodando em Windows, e já era possível movimentar um personagem ao 
+                    longo dos níveis. Grande parte dos gráficos usados nos cenários do jogo era similar ao do jogo Ultima VI.
+                </p>
+                <p>
+                    O desenvolvimento do jogo no início se deu basicamente nas horas livres dos quatro criadores. A longo do outono 
+                    europeu de 1996, Tibia foi ganhando novas funcionalidades: como nomes individuais aos personagens, a habilidade 
+                    deles pegarem, moverem ou largarem itens, e a habilidade de conversarem uns com os outros.
+                </p>
+                <p>
+                    No natal de 1996, foi implementada no jogo a habilidade de se usar itens, e a funcionalidade de gerenciamento 
+                    de contas dos usuários. Também foi criada a primeira versão do site do Tibia. Para os criadores de Tibia, 
+                    estava assim tudo pronto para o lançamento do jogo, o qual ocorreu em 7 de janeiro de 1997. O servidor do Tibia 
+                    se localizava, nessa época, na Universidade de Ratisbona, e o nome da primeira versão foi Alpha 1.0.
+                </p>
+                <h3>
+                    Os primórdios
+                </h3>
+                <p>
+                    Inicialmente apenas poucos usuários vieram ao jogo porque os únicos anúncios para ele eram algumas entradas em 
+                    motores de busca. O primeiro jogador, chamado Albe, veio em 10 de julho de 1997, o qual foi recebido com 
+                    entusiasmo pelos criadores no jogo.
+                </p>
+                <h3>
+                    O Crescimento do jogo
+                </h3>
+                <p>
+                    As atualizações foram recebidas com satisfação pelos jogadores. As pessoas passaram a ficar mais tempo online no jogo, 
+                    e assim sempre havia alguém dentro do jogo todo o tempo. O servidor se tornou insuficiente para toda essa atividade, 
+                    então os criadores compraram um servidor na Universidade de Passau (Alemanha), o qual começou a rodar o jogo em 2 
+                    de julho de 1998.
+                </p>
+                <h3>
+                    Após a fase beta
+                </h3>
+                <p>
+                    A partir daí, as mudanças foram bem mais graduais, não havendo tantas mudanças bruscas no jogo quanto nos estágios 
+                    anteriores do desenvolvimento, e a maior parte das atualizações se centrava mais em mudanças no servidor do que no cliente.
+                </p>
+                <h3>
+                    Profissionalização e comercialização do jogo
+                </h3>
+                <p>
+                    Em 2 de novembro de 2001 foi anunciada a fundação da empresa CipSoft pelos quatro criadores do jogo, dando um caráter 
+                    oficial à produção do jogo. Também foi anunciado de que as Premium Accounts, a versão paga do jogo, seria lançada em alguns dias.
+                </p>
+                <h3>
+                    Novo cliente (sétima versão)
+                </h3>
+                <p>
+                    Em 28 de agosto de 2002, após um longo período de desenvolvimento e testes, foi lançado o novo cliente do Tibia. Ele apresentava 
+                    agora o suporte a DirectX, tornando possível a rolagem suave da tela de jogo, efeitos de luz e sombra, e efeitos de animação 
+                    mais complexos.
+                </p>
+                <h3>
+                    Fatos recentes
+                </h3>
+                <p>
+                    Lançada em 9 de agosto de 2005, esta atualização trouxe uma nova área para jogadores premium: a selva de Tiquanda juntamente 
+                    com a nova cidade de Port Hope nela. A selva apresentou vários novos gráficos e novas raças de monstros (dworcs, lizards e apes). 
+                    Para os jogadores gratuitos, também foi implementada uma nova área: a Dark Cathedral.
+                </p>
+                <p>
+                    Também foram introduzidas mudanças a fim de dificultar a trapaça no jogo:
+                </p>
+                <ul>
+                    <li>
+                        Para combater o uso de macros foram introduzidos os soul points (pontos de alma); os jogadores agora gastavam eles toda a 
+                        vez que criavam uma runa mágica e esses pontos só podiam ser recuperados dormindo ou caçando monstros. O objetivo dessa 
+                        mudança foi o de se combater àqueles que deixavam seus personagens parados por diversas horas com um programa (ilegal, 
+                        pelas regras do Tibia) que criava runas automaticamente enquanto que o jogador ficava longe do computador.
+                    </li>
+                    <li>
+                        Agora passaram a ser necessárias iscas para se pescar, não apenas uma vara.
+                    </li>
+                    <li>
+                        Se um monstro fosse guiado até longe de seu lugar original, ele simplesmente desapareceria a partir de então; isso foi 
+                        para evitar que certos jogadores fortes levassem e deixassem monstros poderosos em áreas onde costumam ficar os jogadores 
+                        mais fracos.
+                    </li>
+                    <li>
+                        Os móveis para as casas passaram a virem desmontados dentro de pacotes, os quais poderiam ser carregados no inventário 
+                        dos jogadores e montados dentro de suas respectivas casas. Anteriormente os móveis vinham inteiros, e tinham de ser 
+                        arrastados até as casas (dando assim um risco de que outro jogador os roubassem ou os quebrassem).
+                    </li>
+                </ul>
+                <h3>
+                    Atualizações anuais e patches
+                </h3>
+                <p>
+                    Desde então, a CipSoft adotou uma política de dois grandes updates anuais, conhecidos como Update de Verão e Update de Inverno, 
+                    com diversos patches intermediários para correções e pequenos ajustes. Essas atualizações têm focado na expansão de conteúdos, 
+                    como novas quests, áreas e monstros, além de melhorias na interface e sistemas de combate.
+                </p>
+            </section>
+            <section class="vocations">
+                <h2>
+                    Vocações
+                </h2>
+                <p>
+                    Existiu por muito tempo apenas quatro vocações básicas entre as quais o jogador pode escolher uma para seu personagem:
+                </p>
+                <h3>
+                    Feiticeiro
+                </h3>
+                <p>
+                    <i>Sorcerers</i> não são grandemente habilidosos com armas e não levam vantagem em combates corpo a corpo, mas 
+                    podem ser devastadores com inúmeros tipos de magias e runas de ataque. Sua especialidade é a energia e fogo.
+                </p>
+                <h3>
+                    Druida
+                </h3>
+                <p>
+                    <i>Druids</i> são muito conhecidos por seus poderes de cura, e apesar de evoluírem com a mesma proporção dos 
+                    (<i>sorcerers</i>), não têm a mesma força de magia. Por serem muito semelhante aos <i>sorcerers</i>, os 
+                    <i>druids</i> fazem uso das mesmas runas que eles. Sua especialidade é o gelo e terra.
+                </p>
+                <h3>
+                    Paladino
+                </h3>
+                <p>
+                    <i>Paladins</i> são grandemente habilidosos em combate à distância e por isto são os melhores arqueiros. Possuem 
+                    um potencial mágico alto, mas sendo inferior aos magos e superior aos cavaleiros. As armas utilizadas pelos 
+                    paladinos, são: arcos, flechas, lanças e dardos.
+                </p>
+                <h3>
+                    Cavaleiro
+                </h3>
+                <p>
+                    <i>Knights</i> são os melhores no manuseio de armas, sendo fortes e resistentes para combates corpo-a-corpo, com suas 
+                    habilidades de defesa e ataques armados. Sua evolução na área de magias é a mais limitada e lenta em comparação 
+                    às demais vocações. As armas utilizadas pelos cavaleiros, são: espadas, machados e clavas.
+                </p>
+                <h3>
+                    Monge
+                </h3>
+                <p>
+                    O <i>Monk</i> (Monge) é a quinta vocação introduzida em Tibia, lançada oficialmente em 2025, sendo a primeira nova classe 
+                    adicionada ao jogo em mais de 25 anos. Esta vocação combina combate corpo a corpo (<i>melee</i>) com habilidades de suporte 
+                    e cura, utilizando artes marciais e poderes místicos para auxiliar aliados e derrotar inimigos.
+                </p>
+                <p>
+                    O Monk possui um estilo de jogo único, com sistemas próprios como <i>Harmony</i> (Harmonia), que permite acumular energia 
+                    ao usar habilidades ofensivas para depois aprimorar feitiços; <i>Virtues</i> (Virtudes), que concedem bônus passivos variados 
+                    conforme o estilo de jogo escolhido; e <i>Serene</i> (Sereno), uma mecânica que aumenta o poder do Monk quando está sozinho ou 
+                    com poucos inimigos próximos, incentivando tanto o jogo solo quanto o em grupo.
+                </p>
+                <p>
+                    A vocação foi projetada para ocupar um espaço exclusivo dentro do universo de Tibia, sem tornar as vocações existentes 
+                    obsoletas, promovendo novas estratégias e composições de equipe. Os testes abertos para o Monk começaram em 25 de fevereiro 
+                    de 2025, com o lançamento oficial previsto para o segundo trimestre do mesmo ano.
+                </p>
+                <p>
+                    A chegada do <i>Monk</i> representa uma das maiores mudanças nas classes jogáveis de Tibia desde sua criação, trazendo renovação 
+                    e novas dinâmicas para a comunidade do jogo.
+                </p>
+            </section>
+            <section class="general">
+                <div class="general-text">
+                    <h2>
+                        Características gerais
+                    </h2>
+
+                    <p>
+                        Tibia é um jogo que pode ser jogado gratuitamente por tempo indeterminado, porém, há a opção de se obter uma assinatura que 
+                        oferece ao jogador acesso exclusivo à: áreas de caça, magias, roupas (outfits) etc., o que pode facilitar o jogador a ganhar 
+                        mais pontos de experiência e ter maior satisfação no jogo em relação àqueles que não têm a assinatura.
+                    </p>
+
+                    <p>
+                        Os gráficos do jogo são em duas dimensões no estilo pixel art, apresentando pouquíssimos detalhes, sendo possível notar com 
+                        facilidade os 'pixels' da tela. Em 1999 havia um texto na página do jogo informando que "O som definitivamente será 
+                        implementado. Isso tomará algum tempo, mas as faixas de som podem ser compostas nesse meio tempo. O formato será MIDI". Até 
+                        27 de setembro de 2022, Tibia não tinha som, apenas textos como onomatopeias indicando o som de alguma criatura ou instrumento 
+                        musical. Durante a celebração de 25 anos do jogo, foi anunciado que o som seria incluído em 2022, e em 27 de setembro foi 
+                        lançada uma atualização incluindo diversos sons, músicas ambientes, e um hino para o jogo.
+                    </p>
+
+                    <p>
+                        Diferentemente dos RPGs de console, Tibia não possui um objetivo predeterminado a ser alcançado: os jogadores determinam a forma 
+                        como desejam seguir as suas aventuras assim como outros jogos de MMORPG, e o mundo continua existindo e mudando mesmo que os 
+                        jogadores não estejam lá. Quando um jogador entra no mundo, ele é representado por um personagem ou avatar (chamado no jogo de 
+                        character). Tudo o que acontece com um jogador é registrado no servidor em tempo real, assim, quando ele voltar, o seu personagem 
+                        estará com os mesmos atributos e características de quando saiu.
+                    </p>
+
+                    <p>
+                        O primeiro jogador de Tibia apenas veio cinco dias depois do jogo ser lançado, ele se chamava Albe e entrou no dia 10 de janeiro 
+                        de 1997.
+                    </p>
+
+                    <p>
+                        O jogo possui múltiplos mundos, cujos servidores estão localizados na Europa, América do Sul, e América do Norte. Os mapas e os 
+                        locais de cada um desses mundos são os mesmos, o que muda de um para outro são algumas regras de combate jogador contra jogador 
+                        e a comunidade de jogadores.
+                    </p>
+
+                    <p>
+                        Cada personagem pode explorar o universo do jogo, enfrentar diversos inimigos controlados pelo computador, e interagir com 
+                        outros jogadores, seja em batalhas PvP ou formando grupos para completar missões juntos.
+                    </p>
+
+                    <p>
+                        O jogo teve o seu máximo de jogadores online simultaneamente em novembro de 2007, atingindo o número de 64.028 jogadores 
+                        conectados simultaneamente. Em uma entrevista, Stephan Vogler afirmou que até 2021, Tibia teve mais de 650 mil jogadores ativos.
+                    </p>
+
+                    <p>
+                        Em 2001 havia textos na página do jogo dizendo que na fase final do projeto de Tibia o código dos servidores e o protocolo 
+                        de comunicação do jogo seriam publicados.
+                    </p>
+                </div>
+                <div class="general-sys-requeriments">
                     <table>
-                        <tbody>
-                            <tr>
-                                <th colspan="2">
-                                    <div id="title-tab">Tibia</div>
-                                </th>
-                            </tr>
-                            <tr>
-                                <td colspan="2" id="image-tab">
-                                    <a href="https://www.tibia.com/mmorpg/free-multiplayer-online-role-playing-game.php" target="_blank">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tibia-logo-2006-1000x450_schwarz.jpg/250px-Tibia-logo-2006-1000x450_schwarz.jpg" 
-                                        alt="Logo do Tibia, com um fundo escuro e sua clássica fonte amarela-alaranjada" width="250" height="113">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Desenvolvedora
-                                </th>
-                                <td>
-                                    <a href="https://www.cipsoft.com/en/">CipSoft</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Diretores
-                                </th>
-                                <td>
-                                    Guido Lübke, Stephan Payer, Ulrich Schlott e Stephan Vogler.
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Plataformas
-                                </th>
-                                <td>
-                                    macOS, Windows e GNU/Linux
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Lançamento
-                                </th>
-                                <td>
-                                    7 de Janeiro de 1997
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>
-                                    Gênero
-                                </th>
-                                <td>
-                                    Multijogador
-                                </td>
-                            </tr>
-                            <tr id="website" >
-                                <td colspan="2">
-                                    <a href="https://www.tibia.com/news/?subtopic=latestnews" target="_blank">www.tibia.com</a>
-                                </td>
-                            </tr>
-                        </tbody>
+
                     </table>
                 </div>
             </section>
-        </main>
+            <section>
+                <h2>
+                    Mercado e comunidade
+                </h2>
+                <p>
+                    A comunidade de Tibia conta com empresas especializadas na comercialização de moedas virtuais (Tibia Coins) e itens raros. Um 
+                    exemplo notável é a empresa brasileira Rei dos Coins, fundada em 2015, que se destacou ao conquistar a "Tríade" de itens lendários 
+                    do jogo — Crown, Magic Longsword e Blessed Shield — itens extremamente raros e únicos em Tibia. Esses itens são exibidos em uma 
+                    casa ao norte do Depot de Thais no servidor Lutabra, reforçando a reputação da empresa no mercado de Tibia Coins e na comunidade do jogo.
+                </p>
+            </section>
+            <aside>
+                <h2>
+                    Ver também
+                </h2>
+                <ul>
+                    <li>
+                        <a href="https://pt.wikipedia.org/wiki/CipSoft">
+                            CipSoft
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pt.wikipedia.org/wiki/MMORPG">
+                            MMORPG
+                        </a>
+                    </li>
+                </ul>
+                <h2>
+                    Bibliografia
+                </h2>
+                <ul>
+                    <li>
+                        <a href="http://www.tibianews.net/">
+                            «Tibia News»
+                        </a>
+                            (em inglês)
+                    </li>
+                </ul>
+            </aside>
 
-        <nav>
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </nav>
-    </div>
+        </article>
+    </main>
 
-    <div class="footer">
 
-    </div>
+    <footer>
+
+    </footer>
 </body>
 </html>
