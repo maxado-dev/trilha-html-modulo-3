@@ -2,7 +2,7 @@
     --dark-fg: #010914;
     --light-fg: #5f8bb7;
 
-    --dark-bg: #ece3e6;
+    --dark-bg: #e4e9ee;
     --light-bg: #fffcfc;
 }
 
@@ -110,6 +110,10 @@ main p, li {
     font-size: larger;
 }
 
+#text body {
+    float: left;
+}
+
 main p {
     text-align: left;
     line-height: 1.5rem;
@@ -138,10 +142,7 @@ a:hover {
 
 #introduction {
     margin: auto;
-    display: grid;
     gap: 3rem;
-    grid-template-areas: "intro-text intro-tab";
-    grid-template-columns: 3fr 1.5fr;
     padding-left: 0.5rem;
     padding-left: 0.5rem;
 }
@@ -149,12 +150,11 @@ a:hover {
 #intro-text small {
     margin-top: 0;
     padding-left: 1rem;
-    grid-area: intro-text;
 }
 
 #intro-tab {
-    grid-area: intro-tab;
-    align-self: baseline;
+    float: right;
+    width: 350px;
 }
 
 .tabs {
@@ -164,8 +164,8 @@ a:hover {
     border-radius: 1rem;
     border-style: double;
     border-color: var(--light-fg);
+    line-height: 1.5rem;
     padding: 0.2rem;
-    width: 100%;
     white-space: normal;
     word-wrap: break-word;
     border-collapse: collapse;
@@ -173,6 +173,14 @@ a:hover {
 
 .tabs tr {
     vertical-align: top;
+}
+
+.tabs th {
+    text-align: left;
+}
+
+.tabs td {
+    padding-left: 1rem;
 }
 
 #intro-tab img {
@@ -191,21 +199,22 @@ a:hover {
 
 #general {
     margin: auto;
-    display: grid;
     gap: 3rem;
-    grid-template-areas: "general-text general-sys-requeriments-tab";
-    grid-template-columns: 3fr 2fr;
     padding-left: 0.5rem;
     padding-left: 0.5rem;
-}
-
-#general-text {
-    grid-area: general-text;
 }
 
 #general-sys-requeriments-tab {
-    grid-area: general-sys-requeriments-tab;
-    align-self: baseline;
+    float: right;
+    width: 450px;
+}
+
+#general-sys-requeriments-tab tr {
+    border-bottom: solid 1px var(--light-fg);
+}
+
+#windows {
+    text-align: center;
 }
 
 h1 {
