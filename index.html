@@ -8,12 +8,22 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <header id="page-header">
+        <div id="header-left">
+            <figure id="cat-logo">
+                <img src="assets/images/schroldinger-small.jpg" width="200"/>
+            </figure>
+        </div>
 
-    <header id="logo">
-        <figure id="cat-logo">
-            <img src="assets/images/schroldinger-small.jpg" width="200"/>
-        </figure>
-        <div class="bar"></div>
+        <div id="header-center">
+            <div id="search-engine">
+                <input type="text" placeholder="&#x1F50D Pesquisar na Wiki">
+                <button>Pesquisar</button>
+            </div>
+        </div>
+
+        <div id="header-right">
+        </div>
     </header>
     <main>
         <aside id="side-content">
@@ -61,74 +71,72 @@
                         O jogo foi desenvolvido utilizando a linguagem de programação C++ em ambas versões de Windows e GNU/Linux.
                     </p>
                 </div>
-                <div id="intro-tab">
-                    <aside>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th colspan="2">
-                                        <div id="title-tab">Tibia</div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" id="image-tab">
-                                        <a href="https://www.tibia.com/mmorpg/free-multiplayer-online-role-playing-game.php" target="_blank">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tibia-logo-2006-1000x450_schwarz.jpg/250px-Tibia-logo-2006-1000x450_schwarz.jpg" 
-                                            alt="Logo do Tibia, com um fundo escuro e sua clássica fonte amarela-alaranjada" width="250" height="113">
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Desenvolvedora
-                                    </th>
-                                    <td>
-                                        <a href="https://www.cipsoft.com/en/">CipSoft</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Diretores
-                                    </th>
-                                    <td>
-                                        Guido Lübke, Stephan Payer, Ulrich Schlott e Stephan Vogler.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Plataformas
-                                    </th>
-                                    <td>
-                                        macOS, Windows e GNU/Linux
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Lançamento
-                                    </th>
-                                    <td>
-                                        7 de Janeiro de 1997
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Gênero
-                                    </th>
-                                    <td>
-                                        Multijogador
-                                    </td>
-                                </tr>
-                                <tr id="website" >
-                                    <td colspan="2">
-                                        <a href="https://www.tibia.com/news/?subtopic=latestnews" target="_blank">www.tibia.com</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </aside>
-                </div>
+                <aside class="tabs" id="intro-tab">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th colspan="2">
+                                    <div id="title-tab">Tibia</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="2" id="image-tab">
+                                    <a href="https://www.tibia.com/mmorpg/free-multiplayer-online-role-playing-game.php" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tibia-logo-2006-1000x450_schwarz.jpg/250px-Tibia-logo-2006-1000x450_schwarz.jpg" 
+                                        alt="Logo do Tibia, com um fundo escuro e sua clássica fonte amarela-alaranjada" width="250" height="113">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Desenvolvedora
+                                </th>
+                                <td>
+                                    <a href="https://www.cipsoft.com/en/">CipSoft</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Diretores
+                                </th>
+                                <td>
+                                    Guido Lübke, Stephan Payer, Ulrich Schlott e Stephan Vogler.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Plataformas
+                                </th>
+                                <td>
+                                    macOS, Windows e GNU/Linux
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Lançamento
+                                </th>
+                                <td>
+                                    7 de Janeiro de 1997
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Gênero
+                                </th>
+                                <td>
+                                    Multijogador
+                                </td>
+                            </tr>
+                            <tr id="website" >
+                                <td colspan="2">
+                                    <a href="https://www.tibia.com/news/?subtopic=latestnews" target="_blank">www.tibia.com</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </aside>
             </section>
-            <section class="history">
+            <section id="history">
                 <h2>
                     História
                 </h2>
@@ -240,7 +248,7 @@
                     como novas quests, áreas e monstros, além de melhorias na interface e sistemas de combate.
                 </p>
             </section>
-            <section class="vocations">
+            <section id="vocations">
                 <h2>
                     Vocações
                 </h2>
@@ -302,8 +310,8 @@
                     e novas dinâmicas para a comunidade do jogo.
                 </p>
             </section>
-            <section class="general">
-                <div class="general-text">
+            <section id="general">
+                <div id="general-text">
                     <h2>
                         Características gerais
                     </h2>
@@ -357,13 +365,95 @@
                         de comunicação do jogo seriam publicados.
                     </p>
                 </div>
-                <div class="general-sys-requeriments">
+                <aside class="tabs" id="general-sys-requeriments-tab">
                     <table>
-
+                        <tbody>
+                            <tr>
+                                <th>
+                                </th>
+                                <th>
+                                    Requisitos
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    Microsoft Windows
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Sistema Operacional
+                                </th>
+                                <td>
+                                    Windows XP (ou superior)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Espaço em Disco
+                                </th>
+                                <td>
+                                    91 MB
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Placa de Vídeo
+                                </th>
+                                <td>
+                                    DirectX 5.0 (ou superior); OpenGL
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Rede
+                                </th>
+                                <td>
+                                    Conexão com a Internet
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    GNU/Linux
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Sistema Operacional
+                                </th>
+                                <td>
+                                    Linux com libc 6 (ou superior)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Espaço em disco
+                                </th>
+                                <td>
+                                    92 MB
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Placa de video
+                                </th>
+                                <td>
+                                    X11; OpenGL
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Rede
+                                </th>
+                                <td>
+                                    Conexão com a Internet
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
-                </div>
+                </aside>
             </section>
-            <section>
+            <section id="market">
                 <h2>
                     Mercado e comunidade
                 </h2>

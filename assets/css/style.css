@@ -1,23 +1,84 @@
+:root {
+    --dark-fg: #010914;
+    --light-fg: #5f8bb7;
+
+    --dark-bg: #ece3e6;
+    --light-bg: #fffcfc;
+}
+
     body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: silver;
+    font-size: large;
+    color: var(--dark-fg);
+    background-color: var(--dark-bg);
 }
 
-ul { list-style: none; padding-left: 5px; }
-
-a { color:blue; text-decoration: none;}
-
-.bar {
-    background-color: #f9f9fb;
-    padding:15px;
-    border-top: solid 1px #515ea4;
-    border-bottom: solid 1px #515ea4;
+#page-header {
+    max-width: 90%;
+    background-color: var(--light-bg);
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "header-left header-center header-right";
+    grid-template-columns: 2fr 5fr 1.5fr;
 }
+
+#header-left {
+    grid-area: header-left;
+    border-right: solid 1px var(--light-fg);
+}
+
+#header-center {
+    grid-area: header-center;
+}
+
+#header-right {
+    grid-area: header-right;
+    border-left: solid 1px var(--light-fg);
+}
+
+#cat-logo img {
+    border-radius: 1rem;
+    border-color: var(--light-fg);
+    border: 1px solid;
+}
+
+#search-engine {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 50%;
+}
+
+#search-engine input {
+    font-size: large;
+    border: solid 1px var(--light-fg);
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    color: var(--light-fg)
+}
+
+#search-engine input::placeholder {
+    color: var(--light-fg)
+}
+
+#search-engine button {
+    margin-left: 0.5rem;
+    width: auto;
+    font-size: large;
+    color: var(--light-fg);
+    background-color: var(--dark-bg);
+    border: solid 1px var(--light-fg);
+    border-radius: 1rem;
+    padding: 0.25rem;
+}
+
 main {
-    max-width: 1440px;
-    background-color: whitesmoke;
+    max-width: 90%;
+    background-color: var(--light-bg);
     margin: auto;
     grid-gap: 3rem;
     display: grid;
@@ -26,42 +87,53 @@ main {
     grid-template-columns: 2fr 5fr 1.5fr;
 }
 
+#full-content {
+    grid-area: full-content;
+}
+
+#side-content {
+    grid-area: side-content;
+    margin-left: 1rem;
+    border-right: solid 1px var(--light-fg);
+}
+
+#in-article { 
+    grid-area: in-article;
+    padding-left: 2rem;
+    margin-left: 0;
+    margin-right: 1rem;
+    border-left: solid 1px var(--light-fg);
+}
+
 main p, li {
     padding: 0.5rem;
+    font-size: larger;
 }
 
 main p {
-    text-align: justify;
+    text-align: left;
     line-height: 1.5rem;
-}
-
-aside li, nav li {
-    padding-left: 2rem;
+    color: black;
 }
 
 main p:hover, li:hover, tr:hover {
-    background-color: rgb(188, 200, 244);
+    background-color: var(--dark-bg);
     border-radius: 0.5rem;
 }
 
-body a {
-    color: rgb(27, 27, 219);
+ul {
+    list-style: none;
+    padding-left: 2rem;
 }
 
-body a:hover {
-    color: rgb(27, 27, 219);
+a {
+    color: var(--light-fg);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-fg);
     text-decoration: underline;
-}
-
-#logo {
-    background-color: silver;
-    margin: 0;
-}
-
-#cat-logo img {
-    border-radius: 1rem;
-    border-color: rgb(189, 198, 210);
-    border: 1px solid;
 }
 
 #introduction {
@@ -74,40 +146,6 @@ body a:hover {
     padding-left: 0.5rem;
 }
 
-#intro-tab {
-    margin-top: 0.5rem;
-    table-layout: fixed;
-    background-color: rgb(218, 218, 218);
-    border-radius: 1rem;
-    border-style: double;
-    border-color: gray;
-    padding: 0.2rem;
-    width: 100%;
-    white-space: normal;
-    word-wrap: break-word;
-    border-collapse: collapse;
-}
-
-#intro-tab img {
-    border-radius: 0.5rem;
-}
-
-#intro-tab #title-tab,#image-tab,#website {
-    text-align: center;
-}
-
-.footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
-}
-.anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
-}
-.sidebar {
-    border-right: solid 1px #cdcdcd;
-}
-
 #intro-text small {
     margin-top: 0;
     padding-left: 1rem;
@@ -116,22 +154,34 @@ body a:hover {
 
 #intro-tab {
     grid-area: intro-tab;
+    align-self: baseline;
 }
 
-#full-content {
-    grid-area: full-content;
+.tabs {
+    margin-top: 0.5rem;
+    table-layout: fixed;
+    background-color: var(--dark-bg);
+    border-radius: 1rem;
+    border-style: double;
+    border-color: var(--light-fg);
+    padding: 0.2rem;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+    border-collapse: collapse;
 }
 
-#side-content {
-    grid-area: side-content;
-    margin-left: 1rem;
+.tabs tr {
+    vertical-align: top;
 }
 
-#in-article { 
-    grid-area: in-article;
-    padding-left: 2rem;
-    margin-left: 0;
-    margin-right: 1rem;
+#intro-tab img {
+    border-radius: 0.5rem;
+    border-color: var(--light-fg);
+}
+
+#intro-tab #title-tab,#image-tab,#website {
+    text-align: center;
 }
 
 #intro-text small {
@@ -139,30 +189,50 @@ body a:hover {
     padding-left: 2rem;
 }
 
+#general {
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "general-text general-sys-requeriments-tab";
+    grid-template-columns: 3fr 2fr;
+    padding-left: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+#general-text {
+    grid-area: general-text;
+}
+
+#general-sys-requeriments-tab {
+    grid-area: general-sys-requeriments-tab;
+    align-self: baseline;
+}
+
 h1 {
-    padding-left: 1rem;
     font-size: 2rem;
-    margin-bottom: 0.1rem;
-    color: rgb(19, 19, 133);
 }
 
 h2 {
-    padding-left: 1rem;
     font-size: 1.5rem;
-    margin-bottom: 0.1rem;
-    color: rgb(19, 19, 133);
 }
 
 h3 {
-    padding-left: 1rem;
     font-size: 1.25rem;
+}
+
+h1, h2, h3, h4 {
+    padding-left: 1rem;
     margin-bottom: 0.1rem;
-    color: rgb(19, 19, 133);
+    color: var(--dark-fg);
 }
 
 h4, h5, h6 {
     padding-left: 1rem;
     font-size: 0.85rem;
     margin-bottom: 0.1rem;
-    color: rgb(19, 19, 133);
+    color: var(--dark-fg);
+}
+
+#full-content h1, #full-content h2, #full-content h3, #full-content h4, #full-content h5, #full-content h6 {
+    border-bottom: solid 1px var(--dark-fg);
 }
