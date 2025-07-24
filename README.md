@@ -1,16 +1,20 @@
 # Módulo 3 - Trilha HTML
 
-**Título:** Recriando Wikipedia, com um layout melhor :)
+# My Gamepedia
 
-## Objetivo
-Este desafio consiste em treinar você com relação a estrutura do site, e também aplicar conhecimentos adiquiridos sobre semântica e acessibilidade.
+![](assets/images/still-life-objects-with-role-playing-game-sheet.jpg)
 
-## Desafio
-Neste repositório tem uma estrutura básica já pré-montada de um layout simples com um pouco de CSS aplicado. Apenas para deixar mais apresentável.
+## Sobre os jogos
+Uma lista dos jogos que mais joguei ao longo dos anos, tendo no index o Tibia, que foi sem dúvidas o que mais tempo dediquei.
 
-Fiquem a vontade para criar da forma que desejarem, e sobre os temas que quiserem. O intuito aqui é divertir, e ao mesmo tempo aprender com o desafio.
+## Detalhes do desafio
+Foquei em utilizar o máximo dos recursos aprendidos até então, que cabiam na proposta do exercício, porém com foco máximo na semântica e acessibilidade.
 
-Sigam as intruções da chamada do vídeo. Acredito que por lá, ficará mais fácil de entenderem como proceder.
+Todos as imagens possuem alt e as que precisam de contexto possuem figcaption também.
+
+## Conclusão
+Me diverti bastante fazendo este desafio, estou animado para os próximos!
+
 
 ## Links úteis
 - [Download do NVDA](https://www.nvaccess.org/download/)
